@@ -1,0 +1,17 @@
+.fishtank-container {
+    width: 100%;
+    height: 200px;
+    background-color: #87CEEB; /* Light blue background */
+    border-bottom: 5px solid #005f73; /* Darker bottom border to simulate depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 70px; /* Push down to be below navbar */
+    overflow: hidden;
+  }
+  
+  canvas {
+    display: block;
+  }
+  

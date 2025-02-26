@@ -1,0 +1,107 @@
+#contact {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-header {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Space between form and email sidebar */
+  }
+  
+  .contact-form {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .submit-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #000;
+  }
+  
+  .email-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .email-icon {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .email-sidebar p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .email-sidebar {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }

@@ -1,0 +1,70 @@
+/* Navbar container */
+.navbar {
+    font-family: Lato;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 20px 20px; /* Add some padding */
+    background-color: #fcfcfc; /* Dark background color */
+    color: #ecf0f1; /* Light text color */
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar stays on top */
+  }
+
+  /* Navbar brand (logo) */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Center logo vertically */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Hover effect for logo */
+.navbar-brand:hover img {
+  transform: scale(1.02); /* Slightly grow the logo */
+}
+  
+  /* Navbar links */
+  .navbar-links {
+    display: flex;
+    margin-left: 30px; /* Space between logo and links */
+    gap: 15px; /* Space between links */
+  }
+  
+  /* Individual nav links */
+  .nav-link {
+    color: #000000; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .nav-link:hover {
+    color: #1abc9c; /* Highlight color on hover */
+  }
+  
+  /* Navbar icons */
+  .navbar-icons {
+    display: flex;
+    margin-right: 40px; /* Space from the right edge */
+    margin-left: auto; /* Push icons to the far right */
+    gap: 15px; /* Space between icons */
+  }
+  
+  /* Icon styling */
+  .navbar-icons .nav-link {
+    color: #000000; /* Light icon color */
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .navbar-icons .nav-link:hover {
+    color: #1abc9c; /* Highlight color on hover */
+  }
+
