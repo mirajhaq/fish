@@ -1,92 +1,109 @@
 #projects {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(248, 248, 238);
-  }
-  
-  .section-header {
-    margin-bottom: 30px;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .projects-container {
-    display: flex;
-    justify-content: center; /* Centers the boxes */
-    gap: 40px; /* Adds space between the two boxes */
-  }
-  
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(248, 248, 238);
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.projects-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.projects-container {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 15px; /* Prevents scrollbar from overlapping content */
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for cleaner look */
+}
+
+.project-box {
+  width: 400px; /* Keep consistent box size */
+  border: 2px solid black;
+  height: auto;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent boxes from shrinking */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.project-title {
+  background-color: #3b3a3a;
+  color: #ffffff;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .project-box {
-    width: 40%; /* Reduce box width to make it smaller */
-    max-width: 400px; /* Prevents it from being too big on large screens */
-    background-color: rgb(216, 241, 255);
-    border: 2px solid black;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px; /* Adjusted height to keep them balanced */
-    transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition for transform and width */
+    width: 300px;
   }
-  
+
   .project-box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+    height: 280px;
   }
-  
-  /* Hover effect for the project box */
-  .project-box:hover {
-    transform: scale(1.01); /* Slightly enlarge the box */
-    width: 45%; /* Increase width on hover */
+
+  .scroll-btn {
+    font-size: 18px;
+    padding: 8px 12px;
   }
-  
-  /* Hover effect for the image inside the box */
-  .project-box:hover img {
-    transform: scale(1.01); /* Slightly enlarge the image */
-  }
-  
-  /* Reduce size of the non-hovered box */
-  .projects-container:hover .project-box:not(:hover) {
-    transform: scale(0.99); /* Slightly reduce the size of the other box */
-    width: 35%; /* Reduce width of the other box */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .projects-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .project-box {
-      width: 80%; /* Take more space on smaller screens */
-      height: auto;
-      padding: 30px;
-    }
-  
-    /* Disable hover effects on mobile */
-    .project-box:hover {
-      transform: none;
-      width: 80%;
-    }
-  
-    .project-box:hover img {
-      transform: none;
-    }
-  
-    .projects-container:hover .project-box:not(:hover) {
-      transform: none;
-      width: 80%;
-    }
-  }
-  
+}
+
   
