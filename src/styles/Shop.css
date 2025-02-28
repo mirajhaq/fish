@@ -39,6 +39,7 @@
 .shop-item img {
   width: 10px; /* Fixed width for the image */
   height: 10px; /* Fixed height for the image */
+  max-height: 100px;
   object-fit: contain; /* Ensures the image fits within the dimensions */
   border-radius: 10px;
   margin-bottom: 15px; /* Adds space below the image */
