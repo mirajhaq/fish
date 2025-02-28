@@ -9,7 +9,7 @@ const Fishtank = () => {
     const ctx = canvas.getContext("2d");
 
     let fish = [];
-    const fishCount = 20; // Number of fish
+    const fishCount = 30; // Number of fish
 
     // Function to generate random colors
     function getRandomColor() {

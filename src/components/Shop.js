@@ -17,13 +17,13 @@ const Shop = () => {
       id: 2,
       name: "Aquarium Filter",
       price: "£45.99",
-      image: "https://th.bing.com/th/id/OIP.WTXtZ47MEJ2vXW-ziCOERQHaGo?rs=1&pid=ImgDetMain",
+      image: "https://th.bing.com/th/id/OIP.WTXtZ47MEJ2vXW-ziCOERQHaGo?rs=1&pid=ImgDetMainfishtank decor ",
     },
     {
       id: 3,
       name: "Tank Decor",
       price: "£25.99",
-      image: "https://via.placeholder.com/200/3357FF",
+      image: "https://th.bing.com/th/id/OIP.G3k2vToeU0R7g90FG_yKRwHaHa?rs=1&pid=ImgDetMain",
     },
   ];
 
