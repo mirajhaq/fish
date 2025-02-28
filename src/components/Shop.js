@@ -10,19 +10,19 @@ const Shop = () => {
     {
       id: 1,
       name: "Fish Food",
-      price: "$15.99",
-      image: "https://via.placeholder.com/200/FF5733",
+      price: "£15.99",
+      image: "https://m.media-amazon.com/images/I/81BdqKjee6L.__AC_SX300_SY300_QL70_ML2_.jpg",
     },
     {
       id: 2,
       name: "Aquarium Filter",
-      price: "$45.99",
-      image: "https://via.placeholder.com/200/33FF57",
+      price: "£45.99",
+      image: "https://th.bing.com/th/id/OIP.WTXtZ47MEJ2vXW-ziCOERQHaGo?rs=1&pid=ImgDetMain",
     },
     {
       id: 3,
       name: "Tank Decor",
-      price: "$25.99",
+      price: "£25.99",
       image: "https://via.placeholder.com/200/3357FF",
     },
   ];
@@ -30,7 +30,7 @@ const Shop = () => {
   return (
     <div id="shop">
       <div className="section-header">
-        <span className="section-title">/ shop</span>
+        <span className="section-title">🪸 shop</span>
       </div>
       <div className="shop-container">
         {shopItems.map((item) => (

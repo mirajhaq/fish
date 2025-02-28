@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div id="about-us">
       <div className="section-header">
-        <span className="section-title">/ about us</span>
+        <span className="section-title">🐟 About us</span>
       </div>
       <div className="about-content">
         <div className="about-description">

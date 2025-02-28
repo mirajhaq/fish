@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div id="services">
       <div className="section-header">
-        <span className="section-title">/ services</span>
+        <span className="section-title">🐚 Services</span>
       </div>
       <div className="services-container">
         {services.map((service) => (
